@@ -1,8 +1,8 @@
 import React, { Fragment, useContext } from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 import { ProfileContext } from '../contexts/ProfileContext';
 const Information = () => {
-	const { setIsProfileOpen, isProfileOpen, handleSave, handleChange, info } = useContext(ProfileContext);
+	const { isProfileOpen, handleSave, handleChange, info } = useContext(ProfileContext);
 
 	// input values need to stay lowercase. Update all styles in informaiton.scss
 	let input = [ 'name', 'email', 'password' ];

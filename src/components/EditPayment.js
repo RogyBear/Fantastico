@@ -1,20 +1,7 @@
 import React, { useContext, Fragment } from 'react';
 import { ProfileContext } from '../contexts/ProfileContext';
 const Edit = (props) => {
-	const {
-		isPaymentOpen,
-		isProfileOpen,
-		setIsPaymentOpen,
-		setIsProfileOpen,
-		handleEdit,
-		handlePaymentCancel,
-		handlePaymentSave,
-		handleProfileSave,
-		handleCancel,
-		info,
-		setInfo
-	} = useContext(ProfileContext);
-
+	const { isPaymentOpen, setIsPaymentOpen, handlePaymentCancel, handlePaymentSave } = useContext(ProfileContext);
 
 	return (
 		<Fragment>

@@ -1,8 +1,8 @@
 import React, { Fragment, useContext } from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 import { ProfileContext } from '../contexts/ProfileContext';
 const Information = () => {
-	const { isOpen, isPaymentOpen, setIsPaymentOpen, handleSave, handleChange, info, setInfo } = useContext(
+	const { isPaymentOpen, handleSave, handleChange, info } = useContext(
 		ProfileContext
 	);
 
@@ -70,22 +70,3 @@ const Information = () => {
 
 export default Information;
 
-{
-	/* <FormGroup className="form__group">
-						<Label for="exampleEmail" className="form__group__label">
-							{element}
-						</Label>
-						{isOpen ? (
-							<Input
-								type="text"
-								name={element}
-								id={element}
-                                placeholder={info[i]}
-								onChange={handleChange}
-								className="form__group__input"
-							/>
-						) : (
-							<div className="form__group__display">{info[i]}</div>
-						)}
-					</FormGroup> */
-}
