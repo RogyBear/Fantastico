@@ -1,0 +1,17 @@
+.edit {
+	border: $border;
+	align-self: flex-start;
+	padding: 5px;
+	cursor: pointer;
+	font-size: $font;
+}
+.change {
+	&__save--btn {
+		@extend .edit;
+		background-color: green;
+	}
+	&__cancel--btn {
+		@extend .edit;
+		margin-left: $space;
+	}
+}
