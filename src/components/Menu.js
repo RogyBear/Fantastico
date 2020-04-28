@@ -52,7 +52,7 @@ const Menu = () => {
 					<ul className="menu__group">
 						{mainLinks.map((element) => (
 							<li className="menu__group__item">
-								<a href="#" className="menu__group__item__link">
+								<a href="/#" className="menu__group__item__link">
 									{element}
 								</a>
 							</li>
@@ -61,7 +61,7 @@ const Menu = () => {
 					<ul className="menu__group">
 						{profileLinks.map((element) => (
 							<li className="menu__group__item">
-								<a href="#" className="menu__group__item__link">
+								<a href="/#" className="menu__group__item__link">
 									{element}
 								</a>
 							</li>
@@ -69,7 +69,7 @@ const Menu = () => {
 					</ul>
 				</div>
 
-				<a className="menu__top__logout" href="#">
+				<a className="menu__top__logout" href="/#">
 					Logout
 				</a>
 			</div>
